@@ -1,0 +1,14 @@
+#First import random library for the computer to choose an option randomly.
+import random
+player=input("Enter your choice")        #Take input from player.
+print(player)          #Print the player's input
+options=["rock","paper","scissor"]    
+computer=random.choice(options)          #Let the computer randomly choose from the options above.
+print(computer)        #Print the computer's choice.
+#Now enter the conditions for 'win','loose',and 'tie'.
+if (player=="rock" and computer=="scissor") or (player=="paper" and computer=="rock") or (player=="scissor" and computer=="paper"):
+    print("You Win")
+elif (computer=="rock" and player=="scissor") or (computer=="paper" and player=="rock") or (computer=="scissor" and player=="paper"):
+    print("You Loose")
+else:
+    print("It's a tie")
